@@ -1,0 +1,49 @@
+########################################################
+#  This is the data card for MES Analysis              #
+#  Auther : Shih-Chuan, Kevin, Kao                     # 
+########################################################
+
+
+# Folder to store results
+Path = Result/
+MES_DIR = MES/
+
+# plot type : png / gif / eps / jpg / pdf 
+PlotType = png
+
+# Result file
+HFileName = h130
+
+#################################################################
+# Module 0: TestRun GNUPlot, 1: Root Method  2: Show RawData 3: Background Only
+################################################################
+Module = 3
+
+TheMES = ( 130.MES )
+
+DataRange = ( 5, 1000 )
+DataScale = 2
+MeasIndex = 0
+SignalScale = 10000
+
+#################################################################
+# Background parameters
+#################################################################
+
+# 2650.mes 
+#N_Para = 3
+#Para = ( -0.32, 0.07, 20  ) 
+#SignalRange = ( 580, 1000 )
+#FixedPara = ( -1 )
+#BkgFitRange = ( 5, 580 ) 
+#FuncRange = ( 5, 1000 ) 
+
+# 130.MES
+N_Para = 5
+FixedPara = ( 0 )
+SignalRange = ( 160, 200, 300, 380, 460, 570 )
+BkgFitRange = ( 100, 600 )
+FuncRange = ( 100, 600 )
+Para = ( 0. , 1.0 , 1586 , 0.35 , 36352 ) 
+#Para = ( 0. , 0.90 , 121 , 0.92 , 2107 , 0.0005, 3 ) 
+
